@@ -18,13 +18,13 @@ Daily study time: **1–2 hours**.
 - [x] Course direction selected
 - [x] 12-week roadmap defined
 - [x] Capstone selected: Enterprise AI Incident Investigator
-- [ ] Python environment
-- [ ] IDE configured
-- [ ] FastAPI project
-- [ ] Pydantic models
-- [ ] First endpoint
+- [x] Python environment
+- [x] IDE configured
+- [x] FastAPI project
+- [x] Pydantic models
+- [x] First endpoint
 - [ ] pytest setup
-- [ ] First LLM API call
+- [x] First LLM API call
 
 ---
 
@@ -34,23 +34,17 @@ Daily study time: **1–2 hours**.
 
 Current focus:
 
-- Python development environment
-- project structure
-- FastAPI
-- Pydantic
-- typed APIs
+- typed FastAPI request/response contracts
+- OpenAI Structured Outputs introduction
+- preparing pytest coverage for the API
 
 ---
 
 ## Next
 
-1. Create the repository.
-2. Configure Python.
-3. Create a virtual environment.
-4. Add FastAPI + Uvicorn.
-5. Create the first `/health` endpoint.
-6. Add Pydantic request/response models.
-7. Add the first tests.
+1. Start Week 1, Day 2: set up pytest and HTTPX.
+2. Test `/health` and valid/invalid incident requests.
+3. Continue improving API error handling and configuration.
 
 After Week 1:
 
@@ -60,7 +54,9 @@ After Week 1:
 
 ## Difficulties
 
-None yet.
+- PyCharm initially retained Java project settings; resolved by reopening with a fresh `.idea` configuration.
+- The OpenAI project initially returned `403` for `gpt-4o-mini`; model access was resolved.
+- A structured response invented service names absent from the incident description. The prompt was tightened, but semantic quality still needs evaluation.
 
 ---
 
@@ -88,3 +84,5 @@ None yet.
 The course structure is fixed around **12 weeks**, with one dedicated chat per week and seven study days inside each week.
 
 The goal is practical competence, not learning all of Python or studying ML theory before building anything.
+
+Week 1, Day 1 was completed on **18 November 2026**: the FastAPI endpoints, Pydantic models, first OpenAI Structured Outputs call, Swagger UI checks, independent exercise and mini-interview were completed. The model's `confidence` is an uncalibrated self-assessment. Day 2 has not started yet.
